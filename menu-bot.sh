@@ -45,10 +45,10 @@ echo -e ""
 read -p " Select menu :  "  opt
 echo -e ""
 case $opt in
-1) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
+1) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
 2) clear ; bot ; exit ;;
-3) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/installer.sh && chmod +x installer.sh && ./installer.sh ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/bbt.sh && chmod +x bbt.sh && ./bbt.sh ; exit ;;
+3) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/installer.sh && chmod +x installer.sh && ./installer.sh ; exit ;;
+4) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/bbt.sh && chmod +x bbt.sh && ./bbt.sh ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;

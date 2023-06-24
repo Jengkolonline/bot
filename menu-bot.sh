@@ -48,7 +48,7 @@ case $opt in
 1) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
 2) clear ; bot ; exit ;;
 3) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/installer.sh && chmod +x installer.sh && ./installer.sh ; exit ;;
-4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
+4) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/bbt.sh && chmod +x bbt.sh && ./bbt.sh ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;

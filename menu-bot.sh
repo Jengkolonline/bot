@@ -32,7 +32,7 @@ echo -e ""
 echo -e " [\e[36m•1\e[0m] Install Bot Notif "
 echo -e " [\e[36m•2\e[0m] Menu Bot Notif "
 echo -e " [\e[36m•3\e[0m] Install Bot Store Tele "
-echo -e " [\e[36m•4\e[0m] Seting Bot Store Tele "
+echo -e " [\e[36m•4\e[0m] Buat Bot Store Tele "
 echo -e ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
@@ -47,7 +47,7 @@ echo -e ""
 case $opt in
 1) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
 2) clear ; bot ; exit ;;
-3) clear ; delwg ; exit ;;
+3) wget https://raw.githubusercontent.com/Jengkolonline/bot/main/installer.sh && chmod +x installer.sh && ./installer.sh ; exit ;;
 4) wget https://raw.githubusercontent.com/Jengkolonline/wireguard/main/wg.sh && chmod +x wg.sh && ./wg.sh ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;

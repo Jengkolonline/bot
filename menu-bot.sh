@@ -25,32 +25,33 @@ checking_sc() {
 }
 checking_sc
 clear
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "\E[0;100;33m       • BOT MENU •         \E[0m"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+echo -e " \033[31m##########\033[33m##########\033[32m##########\033[34m##########\033[35m##########\033[36m##########\e[0m"
+echo -e " \033[31m╭══════════════════════════════════════════════════════════╮\e[0m"
+echo -e " \033[34m│$NC\033[33m                       MENU BOT                           $NC\033[34m│\e[0m"
+echo -e " \033[33m╰══════════════════════════════════════════════════════════╯\e[0m"
+echo -e " \033[32m╭══════════════════════════════════════════════════════════╮\e[0m"
+echo -e " \033[35m│$NC [01]${NC} \033[0;36m Chek User Login Bot SSH${NC}"
+echo -e " \033[35m│$NC [02]${NC} \033[0;36m Chek Member Bot SSH${NC}"
+echo -e " \033[35m│$NC [03]${NC} \033[0;36m Chek User Bot Vmess${NC}"
+echo -e " \033[35m│$NC [04]${NC} \033[0;36m Chek User Bot Vless${NC}"
+echo -e " \033[35m│$NC [05]${NC} \033[0;36m Chek User Bot Trojan${NC}"
+echo -e " \033[35m│$NC [06]${NC} \033[0;36m Daftar BOT${NC}"
+echo -e " \033[35m│$NC [07]${NC} \033[0;36m Bacup BOT${NC}"
+echo -e " \033[35m│$NC [08]${NC} \033[0;36m Restart BOT${NC}"
+echo -e " \033[36m╰══════════════════════════════════════════════════════════╯\e[0m"
+echo -e " \033[31m##########\033[33m##########\033[32m##########\033[34m##########\033[35m##########\033[36m##########\e[0m"
 echo -e ""
-echo -e " [\e[36m•1\e[0m] Install Bot Notif "
-echo -e " [\e[36m•2\e[0m] Menu Bot Notif "
-echo -e " [\e[36m•3\e[0m] Install Bot Store Tele "
-echo -e " [\e[36m•4\e[0m] Buat Bot Store Tele "
-#echo -e " [\e[36m•5\e[0m] Shell Bot "
-echo -e ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-echo -e " [\e[31m•0\e[0m] \e[31mBACK TO MENU\033[0m"
-echo -e ""
-echo -e   "Press x or [ Ctrl+C ] • To-Exit"
-echo ""
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e ""
-read -p " Select menu :  "  opt
+read -p " Select From Options [ 1 - 8 ] : " opt
 echo -e ""
 case $opt in
-1) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
-2) clear ; bot ; exit ;;
-3) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/installer.sh && chmod +x installer.sh && ./installer.sh ; exit ;;
-4) clear ; wget https://raw.githubusercontent.com/Jengkolonline/bot/main/bot2.sh && chmod +x bot2.sh && ./bot2.sh ; exit ;;
-#5) clear ; wgwt https://raw.githubusercontent.com/Jengkolonline/bot/main/ShellBot.sh && chmod +x ShellBot.sh && ./ShellBot.sh ; exit ;;
+1) clear ; bot-cek-login-ssh ; exit ;;
+2) clear ; bot-member-ssh ; exit ;;
+3) clear ; bot-cek-ws ; exit ;;
+4) clear ; bot-cek-vless ; exit ;;
+5) clear ; bot-cek-tr ; exit ;;
+6) clear ; wax ; exit ;;
+7) clear ; menu-backupp ; exit ;;
+8) clear ; restorebot ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo "Anda salah tekan " ; sleep 1 ; menu-ssh ;;

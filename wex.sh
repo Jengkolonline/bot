@@ -18,6 +18,7 @@ LIGHT='\033[0;37m'
 grenbo="\e[92;1m"
 clear
 trap ' ' 2 20
+mkdir -p /etc/adminbot/var.txt
 mekmem=$(cat /etc/adminbot/var.txt)
 if [[ "${mekmem}" == "" ]]; then
 echo -e "${Lyellow}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}"

@@ -4,9 +4,9 @@
 rm -rf xolpanel.sh
 apt update && apt upgrade
 apt install python3 python3-pip git
-git clone https://github.com/Jengkolonline/xolpanel.git
-unzip xolpanel/xolpanel.zip
-pip3 install -r xolpanel/requirements.txt
+git clone https://github.com/Jengkolonline/delpro.git
+unzip delpro/delpro.zip
+pip3 install -r delpro/requirements.txt
 pip3 install pillow
 
 #isi data
@@ -14,9 +14,9 @@ echo ""
 read -e -p "[*] Input your Bot Token : " bottoken
 read -e -p "[*] Input Your Id Telegram :" admin
 read -e -p "[*] Input Your Subdomain :" domain
-echo -e BOT_TOKEN='"'$bottoken'"' >> /root/xolpanel/var.txt
-echo -e ADMIN='"'$admin'"' >> /root/xolpanel/var.txt
-echo -e DOMAIN='"'$domain'"' >> /root/xolpanel/var.txt
+echo -e BOT_TOKEN='"'$bottoken'"' >> /root/delpro/var.txt
+echo -e ADMIN='"'$admin'"' >> /root/delpro/var.txt
+echo -e DOMAIN='"'$domain'"' >> /root/delpro/var.txt
 clear
 echo "Done"
 echo "Your Data Bot"
@@ -28,22 +28,22 @@ echo -e "==============================="
 echo "Setting done Please wait 10s"
 sleep 10
 
-cat > /etc/systemd/system/xolpanel.service << END
+cat > /etc/systemd/system/delpro.service << END
 [Unit]
-Description=Simple XolPanel - @XolPanel
+Description=Simple DelProBot - @DelProBot
 After=network.target
 
 [Service]
 WorkingDirectory=/root
-ExecStart=/usr/bin/python3 -m xolpanel
+ExecStart=/usr/bin/python3 -m delpro
 Restart=always
 
 [Install]
 WantedBy=multi-user.target
 END
 
-systemctl start xolpanel 
-systemctl enable xolpanel
+systemctl start delpro 
+systemctl enable delpro
 
 clear
 

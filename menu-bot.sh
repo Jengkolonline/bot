@@ -35,9 +35,11 @@ echo -e " \033[35m│$NC [02]${NC} \033[0;36m Chek Member Bot SSH${NC}"
 echo -e " \033[35m│$NC [03]${NC} \033[0;36m Chek User Bot Vmess${NC}"
 echo -e " \033[35m│$NC [04]${NC} \033[0;36m Chek User Bot Vless${NC}"
 echo -e " \033[35m│$NC [05]${NC} \033[0;36m Chek User Bot Trojan${NC}"
-echo -e " \033[35m│$NC [06]${NC} \033[0;36m Daftar BOT${NC}"
+echo -e " \033[35m│$NC [06]${NC} \033[0;36m Daftar BOT SSH${NC}"
 echo -e " \033[35m│$NC [07]${NC} \033[0;36m Bacup BOT${NC}"
 echo -e " \033[35m│$NC [08]${NC} \033[0;36m Restart BOT${NC}"
+echo -e " \033[35m│$NC [07]${NC} \033[0;36m Add BOT Notif${NC}"
+echo -e " \033[35m│$NC [08]${NC} \033[0;36m Delet BOT Notif${NC}"
 echo -e " \033[36m╰══════════════════════════════════════════════════════════╯\e[0m"
 echo -e " \033[31m##########\033[33m##########\033[32m##########\033[34m##########\033[35m##########\033[36m##########\e[0m"
 echo -e ""
@@ -49,7 +51,7 @@ case $opt in
 3) clear ; bot-cek-ws ; exit ;;
 4) clear ; bot-cek-vless ; exit ;;
 5) clear ; bot-cek-tr ; exit ;;
-6) clear ; wax ; exit ;;
+6) clear ; apt update && apt install wget -y && wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
 7) clear ; menu-backupp ; exit ;;
 8) clear ; restorebot ; exit ;;
 0) clear ; menu ; exit ;;

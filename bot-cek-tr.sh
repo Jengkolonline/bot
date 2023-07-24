@@ -49,7 +49,7 @@ tim2sec() {
     echo "$res"
 }
 echo -e "**◇━━━━━━━━━━━━━━━━━◇**"
-marimakan=($(cat /etc/trojan/.trojan.db | grep '^###' | cut -d ' ' -f 2 | sort | uniq))
+marimakan=($(cat /etc/trojan/.trojan.db | grep '^#!' | cut -d ' ' -f 2 | sort | uniq))
 echo -n >/tmp/rotate
 for db in ${marimakan[@]}; do
     logFile=$(cat /var/log/xray/access.log | grep -w "email: ${db}" | tail -n 150)

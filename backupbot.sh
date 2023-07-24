@@ -12,7 +12,7 @@ BLUE="\033[36m"
 RED='\033[0;31m'
 NC='\033[0m'
 #bottoket
-source /etc/adminbot/var.txt
+source /etc/xolpanel/var.txt
 URL=https://api.telegram.org/bot$BOT_TOKEN/sendDocument
 HOST="$(cat /etc/xray/domain)"
 function BACKUPVPS() {

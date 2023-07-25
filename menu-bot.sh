@@ -39,7 +39,7 @@ echo -e ""
 read -p " Select From Options [ 1 - 3 ] : " opt
 echo -e ""
 case $opt in
-1) clear ; apt update && apt install wget -y && wget https://raw.githubusercontent.com/Jengkolonline/bot/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
+1) clear ; apt update && apt install wget -y && wget https://raw.githubusercontent.com/Jengkoltunnel/xolpanel/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh ; exit ;;
 2) clear ; add-bot-notif ; exit ;;
 3) clear ; del-bot-notif ; exit ;;
 0) clear ; menu ; exit ;;
